@@ -1,15 +1,13 @@
 # dataset : https://www.kaggle.com/competitions/dog-breed-identification/data
 
 import numpy as np
+import pandas as pd
 import cv2
 
 IMAGE_SIZE = (331, 331)
 IMAGE_FULL_SIZE = (331, 331, 3)
 
 trainMyImageFolder = "E:/Data-sets/Dog Breed Identification/train"
-
-# load the csv file
-import pandas as pd
 
 df = pd.read_csv("E:/Data-sets/Dog Breed Identification/labels.csv")
 print("head of lables :")
